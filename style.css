@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  background-color: rgb(223, 198, 169);
+  border-radius: 10px;
+}
+
+img {
+  width: 350px;
+  min-height: 370px;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card-content {
+  padding: 20px 40px;
+}
+
+h1,
+h4 {
+  /* padding-top: 3px; */
+  margin: 0px;
+}
+
+h4 {
+  text-indent: 20px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.card-icons {
+  display: flex;
+
+  /* justify-content: space-around;
+  align-items: center; */
+}
+
+.card-icons i {
+  color: white;
+  padding: 10px;
+  margin: 0px 5px;
+  border-radius: 50%;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.card-icons .facebook-icon {
+  background-color: #4267b2;
+}
+
+.card-icons .twitter-icon {
+  background-color: #1da1f2;
+}
+
+.card-icons .dribbble-icon {
+  background-color: #dd3a79;
+}
+
+@media (max-width: 950px) {
+  .card {
+    flex-direction: column;
+  }
+
+  img {
+    width: 100%;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+}
